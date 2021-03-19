@@ -12,10 +12,12 @@
   <h3>You don't have any engineers yet.</h3>
 } 
 
+<ul>
 @foreach (Engineer engineer in Model)
 {
   <li>@Html.ActionLink($"{engineer.EngineerDetails}", "Details", new { id = engineer.EngineerId })</li>
 }
+</ul>
 
 <p>@Html.ActionLink("Add new engineer", "Create")</p>
 <p>@Html.ActionLink("Home", "Index", "Home")</p>
