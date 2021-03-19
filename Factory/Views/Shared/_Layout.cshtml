@@ -7,7 +7,12 @@
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
+    <div class="container">
     @RenderBody()
-    @Html.Partial("Footer")
+    <hr />
+    <footer>
+      <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+    </footer>
+  </div>
   </body>
 </html>
