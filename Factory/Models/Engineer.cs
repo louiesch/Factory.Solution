@@ -10,6 +10,7 @@ namespace Factory.Models
     }
 
     public int EngineerId { get; set; }
+    public string EngineerName { get; set; }
     public string EngineerDetails { get; set; }
     public virtual ICollection<MachineEngineer> JoinEntities { get; set; } //unsure if i need a setter here
   }
