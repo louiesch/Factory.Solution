@@ -18,7 +18,7 @@ namespace Factory.Controllers
     public ActionResult Index()
     {
       List<Machine> model = _db.Machines.ToList();
-      return View();
+      return View(model);
     }
 
     public ActionResult Create()
