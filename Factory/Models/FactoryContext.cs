@@ -11,7 +11,7 @@ namespace Factory.Models
 
     public FactoryContext(DbContextOptions options) : base(options) { }
 
-    protected override void OnConfiguration(DbContextOptionsBuilder optionsBuilder)
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
       optionsBuilder.UseLazyLoadingProxies();
     }
