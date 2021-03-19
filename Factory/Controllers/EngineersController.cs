@@ -42,10 +42,10 @@ namespace Factory.Controllers
       _db.Engineers.Add(engineer);
       _db.SaveChanges();
       if (MachineId != 0)
-    {
+      {
         _db.MachineEngineer.Add(new MachineEngineer() { MachineId = MachineId, EngineerId = engineer.EngineerId });
-    }
-    _db.SaveChanges();
+      }
+      _db.SaveChanges();
       return RedirectToAction("Index");
     }
 
