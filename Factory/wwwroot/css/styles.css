@@ -1,9 +1,15 @@
-div#footer {
-	position:fixed;
-	bottom:0px;
-	left:0px;
-	width:100%;
-	color:#CCC;
-	background:#333;
-	padding:8px;
+body {
+	background-image: url(../assets/img/factory.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+	text-align:center;
+	width: 100%;
+  height: auto;
 }
+
+h1 {
+  color: black;
+  font-size: 50px;
+}
+
+/* still can't get any of this CSS to show!! */
