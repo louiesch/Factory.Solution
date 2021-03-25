@@ -27,7 +27,7 @@
   > cd Factory.Solution
 * _Navigate to production folder_
   > cd Factory
-* _Create a file in production folder called appsettings.json_
+* _Create a file in top level of Factory production folder called appsettings.json_
   > touch appsettings.json
 * _Add the following code to your .json file_
 ```
@@ -39,21 +39,6 @@
 ```
 * _Make sure that [YOUR DATABASE] and [YOUR PASSWORD] match the database name and password of your local MySql server._
 
-### Database Setup
-
-* _Download MySQL and MySQL Workbench to set up a local database_
-
-* _Once installed, open MySql Workbench and open a local server. If prompted, enter password_
-
-* _In the Navigator, select the Administration tab and then select Data Import/Restore_
-
-* _Under Import Options, select Import From Self-Contained File, and then select the "louie_schoenknecht.sql" file which can be found in Factory.Solution_
-
-* _In the Default Schema to be Imported To option, select 'New'_
-
-* _Enter a name for your database and select OK_
-
-* _Click Start Import to begin database import_
 
 ### To Run Application
 
@@ -62,6 +47,9 @@
 
 * _To download obj and bin files needed for the program to run, while still in Factory folder type into the terminal:_
   >dotnet restore
+
+* _The cloned project should come with a Migrations folder. Check that it is there, and then to apply the database structure, type in the terminal_
+  >dotnet ef database update
 
 * _To run the program, while still in production folder Factory type into the terminal:_
   >dotnet run
