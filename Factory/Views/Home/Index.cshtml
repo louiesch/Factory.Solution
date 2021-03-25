@@ -5,21 +5,6 @@
 @using Factory.Models;
 @model List<Factory.Models.Engineer>;
 
-@* <h1>Engineers</h1>
-<ul>
-  @foreach (Engineer engineer in Model)
-  {
-    <li>@Html.ActionLink($"{engineer.EngineerDetails}", "Details", new { id = engineer.EngineerId })</li>
-  }
-</ul>
-
-<h1>Machines</h1>
-<ul>
-  @foreach(Machine machine in Model)
-  {
-    <li>@Html.ActionLink($"{machine.MachineDetails}", "Details", new { id = machine.MachineId })</li>
-  }
-</ul> *@
 
 <h1>Louie's Factory</h1>
 <p>@Html.ActionLink("See all engineers", "Index", "Engineers")</p>
