@@ -1,6 +1,6 @@
 # _Dr. Sillystringz's Factory_
 
-#### _Independent coding assignment to get experience using ASP.NET Core MVC and Databases with many-to-many relationships, to help a factory track machines and engineers._
+#### _Independent coding project to get experience using ASP.NET Core MVC and Databases with many-to-many relationships, to help a factory track machines and engineers._
 
 #### By _**Louie Schoenknecht**_
 
